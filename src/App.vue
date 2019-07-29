@@ -1,18 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div v-if="images.length">
+      <img v-for="(image) in images" v-bind:src="image.baseimageurl" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import apikey from './assets/apikey.js'
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+  data: function() {
+    return {images: []}
+  },
+  mounted: function() {
+    this.getImages()
+  },
+  methods: {
+    getImages: function() {
+      const url = `https://api.harvardartmuseums.org/image?apikey=${apikey}`
+      fetch(url)
+      .then(response => response.json())
+      .then(result => this.images = result.records)
+    }}
+
 }
 </script>
 
