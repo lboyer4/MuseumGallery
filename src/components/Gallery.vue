@@ -4,7 +4,7 @@
 
 		<button v-on:click="counter -= 1">Previous Image
     </button>
-		<div>
+		<div class="art">
       <Piece v-bind:display="images[counter]" />
      </div>
     
@@ -17,7 +17,6 @@
 <script>
 import Piece from './Piece.vue';
 
-
 export default {
 	name: "Gallery",
 	components: {
@@ -25,8 +24,7 @@ export default {
 	},
 	data() {
     return {
-      counter: 0,
-      
+      counter: 0,  
     }
   },
 	props: ["images"]
@@ -37,15 +35,21 @@ export default {
 
 	.gallery {
 		display: flex;
-		width: 100%;
 		margin-left: 20%;
 	}
 
 	.long-strip {
 		padding: 20px;
 		width: 100%;
-		background-color: #d1d1d1;
+		background-color: #E5E5E5;
 		margin-top: 50px;
+		text-align: center;
+		height: 525px;
+	}
+
+	.art {
+		height: 400px;
+		width: 550px;
 		align-content: center;
 	}
 
@@ -54,10 +58,12 @@ export default {
 		font-size: 20px;
 		width: 160px;
 		margin-top: 150px;
+		border-radius: 5px;
 	}
 
 	button:hover {
-		background-color: #ACB9C4;
+		background-color: #32363B;
+		color: #fff;
 	}
 
 </style>
