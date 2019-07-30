@@ -2,9 +2,6 @@
 	<div>
 		<h1></h1>
 		<img v-bind:src="image.baseimageurl"  />
-<!-- 		<div class="wall" v-if="images.length">
-      <img class="image" v-for="(image) in images" v-bind:key="image.id" v-bind:src="image.baseimageurl" />
-    </div> -->
 	</div>
 </template>
 
@@ -17,12 +14,15 @@ export default {
 </script>
 
 <style scoped>
+
 	h1 {
 		color: black;
 	}
+
 	img {
 		height: 200px;
 		margin: 20px;
 		margin-left: 60px;
 	}
+	
 </style>

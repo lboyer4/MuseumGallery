@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       images: [],
+      error: ''
     }
   },
   mounted: function() {
@@ -27,10 +28,11 @@ export default {
   },
   methods: {
     getImages: function() {
-      const url = `https://api.harvardartmuseums.org/image?apikey=${apikey}`
+      const url = `https://api.harvardartmuseums.org/image?size=30&apikey=${apikey}`
       fetch(url)
       .then(response => response.json())
       .then(result => this.images = result.records)
+      .catch(error => this.error = error)
     }}
 
 }
@@ -42,9 +44,7 @@ export default {
   box-sizing: border-box;
   margin: 0;
   color: #2c3e50;
-
 }
-
 
 body, html {
   background-image: url("./assets/blankwall.jpg" );
@@ -53,6 +53,5 @@ body, html {
   background-size: contain;
   padding: 5px;
 }
-
 
 </style>

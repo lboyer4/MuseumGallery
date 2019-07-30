@@ -1,7 +1,6 @@
 <template>
 	<div>
 		<h1>Welcome To The Gallery</h1>
-
 	</div>
 </template>
 
@@ -17,6 +16,6 @@ export default {
 h1 {
 	text-align: center;
 	font-size: 50px;
-
 }
+
 </style>
