@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       images: [],
+      error: ''
     }
   },
   mounted: function() {
@@ -27,11 +28,11 @@ export default {
   },
   methods: {
     getImages: function() {
-      const url = `https://api.harvardartmuseums.org/image?apikey=${apikey}`
+      const url = `https://api.harvardartmuseums.org/image?size=30&apikey=${apikey}`
       fetch(url)
       .then(response => response.json())
       .then(result => this.images = result.records)
-      .catch(error => console.log(error))
+      .catch(error => this.error = error)
     }}
 
 }
