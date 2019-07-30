@@ -1,14 +1,14 @@
 <template>
 	<div>
-		<h1></h1>
-		<img v-bind:src="image.baseimageurl"  />
+		<img v-bind:src="display.baseimageurl" />
 	</div>
 </template>
 
 <script>
 export default {
 	name: "Piece",
-	props: ["image"]
+	props: ["display"],
+
 }
 
 </script>
@@ -20,9 +20,11 @@ export default {
 	}
 
 	img {
-		height: 200px;
+		height: 400px;
 		margin: 20px;
-		margin-left: 60px;
+		border: 5px solid #2c3e50;
+		border-radius: 2px;
+		
 	}
 	
 </style>

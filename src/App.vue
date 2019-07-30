@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     getImages: function() {
-      const url = `https://api.harvardartmuseums.org/image?size=30&apikey=${apikey}`
+      const url = `https://api.harvardartmuseums.org/image?size=100&apikey=${apikey}`
       fetch(url)
       .then(response => response.json())
       .then(result => this.images = result.records)
@@ -49,8 +49,8 @@ export default {
 body, html {
   background-image: url("./assets/blankwall.jpg" );
   height: 100%;
-  background-repeat: repeat;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5px;
 }
 
