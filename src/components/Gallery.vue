@@ -25,7 +25,7 @@ export default {
 		padding: 20px;
 		width: 100%;
 		background-color: #d1d1d1;
-		margin-top: 95px;
+		margin-top: 90px;
 	}
 
 </style>
