@@ -22,5 +22,5 @@ _This app requires an api key that you can request from https://www.harvardartmu
 
 ## ScreenShot
 
-![Image of desktop view](./src/assets/images/screenshot.png)
+![Image of desktop view](./src/assets/screenshot.png)
 
