@@ -1,29 +1,20 @@
-# vue
+# Museum Gallery
 
-## Project setup
-```
-npm install
-```
+## Description
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Museum Gallery is a minimlistic app that shows a user images from the Harvard Art Museum API. It is a final project at Turing School of Software and Design, and is the first App I've built in Vue.js.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Installation
 
-### Run your tests
-```
-npm run test
-```
+  #### 1. Clone down and cd in to this repository 
+  
+  ```https://github.com/lboyer4/MuseumGallery.git```
+  
+  #### 2. Run npm install
+  
+  ```npm install```
+  
+  #### 3. Compile and Start App
+  
+  ```npm run serve```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
