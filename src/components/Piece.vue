@@ -14,12 +14,15 @@ export default {
 </script>
 
 <style scoped>
+
 	h1 {
 		color: black;
 	}
+
 	img {
 		height: 200px;
 		margin: 20px;
 		margin-left: 60px;
 	}
+	
 </style>

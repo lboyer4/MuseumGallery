@@ -43,9 +43,7 @@ export default {
   box-sizing: border-box;
   margin: 0;
   color: #2c3e50;
-
 }
-
 
 body, html {
   background-image: url("./assets/blankwall.jpg" );
@@ -54,6 +52,5 @@ body, html {
   background-size: contain;
   padding: 5px;
 }
-
 
 </style>
