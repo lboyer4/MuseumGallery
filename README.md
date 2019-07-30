@@ -1,4 +1,4 @@
-# Museum Gallery
+# Gallery Gazer
 
 ## Description
 
