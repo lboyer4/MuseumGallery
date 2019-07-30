@@ -18,3 +18,4 @@ Museum Gallery is a minimlistic app that shows a user images from the Harvard Ar
   
   ```npm run serve```
 
+_This app requires an api key that you can request from https://www.harvardartmuseums.org/collections/api_
