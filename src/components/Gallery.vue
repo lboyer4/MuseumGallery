@@ -1,7 +1,5 @@
 <template>
-	<div>
-		<h1>Gallery</h1>
-		
+	<div class="gallery">
 		<div v-bind:key="image.id" v-if="images.length" v-for="image in images">
       <Piece v-bind:image="image" />
     </div>
@@ -21,5 +19,12 @@ export default {
 </script>
 
 <style scoped>
+	.gallery {
+		display: flex;
+		overflow-x: scroll;
+		justify-content: space-around;
+		padding: 20px;
+		width: 100%;
+	}
 
 </style>

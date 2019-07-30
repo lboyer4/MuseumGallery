@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h1>{{msg}}</h1>
+		<h1>Welcome To The Gallery</h1>
 
 	</div>
 </template>
