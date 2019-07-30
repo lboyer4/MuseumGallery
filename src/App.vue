@@ -47,10 +47,10 @@ export default {
 
 
 body, html {
-  background-image: url("./assets/displaywall.jpeg" );
+  background-image: url("./assets/blankwall.jpg" );
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   padding: 5px;
 }
 

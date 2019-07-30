@@ -22,9 +22,10 @@ export default {
 	.gallery {
 		display: flex;
 		overflow-x: scroll;
-		justify-content: space-around;
 		padding: 20px;
 		width: 100%;
+		background-color: #d1d1d1;
+		margin-top: 95px;
 	}
 
 </style>
