@@ -2,7 +2,7 @@
 
 ## Description
 
-Museum Gallery is a minimlistic app that shows a user images from the Harvard Art Museum API. It is a final project at Turing School of Software and Design, and is the first App I've built in Vue.js.
+Gallery Gazer is a minimlistic app that shows a user images from the Harvard Art Museum API. It is a final project at Turing School of Software and Design, and is the first App I've built in Vue.js.
 
 ## Installation
 
