@@ -6,8 +6,6 @@
 </template>
 
 <script>
-
-import apikey from './assets/apikey.js';
 import Header from './components/Header.vue';
 import Gallery from './components/Gallery.vue';
 
@@ -28,7 +26,7 @@ export default {
   },
   methods: {
     getImages: function() {
-      const url = `https://api.harvardartmuseums.org/image?size=100&apikey=${apikey}`
+      const url = `https://api.harvardartmuseums.org/image?size=100&apikey=${process.env.VUE_APP_API_KEY }`
       fetch(url)
       .then(response => response.json())
       .then(result => this.images = result.records)
